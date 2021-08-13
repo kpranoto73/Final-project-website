@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  	<meta charset="utf-8" />
+  	<title>Emerald City Boom</title>
+  	<link rel="stylesheet" href="styles/photo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header>
+		<img src="images/main_logo.jpg" alt="Drum" width="180">
+    	     <hgroup>
+			<h1>Emerald City Boom</h1>
+          	<h2>Indoor Marching Percussion</h2>
+          </hgroup>
+          <nav>
+ 			<ul>
+				<li><a href="main.html" class="current">Home</a></li>
+                  	<li><a href="photo.html">Photos</a></li>
+                  	<li><a href="video.html">Videos</a></li>
+			   	<li><a href="member.html">Members</a></li>
+				<li><a href="instrument.html">Instruments</a></li>
+                  	<li><a href="contact.html">Contact</a></li>
+			   	<li><a href="sign_up.html">Sign Up</a></li>
+			</ul>
+        	</nav>
+	</header>
+    	<section>
+	    	<h1>Our Gallery</h1>
+	    	<p>Here are some pics from past and present:</p>
+	    	<div class="slideshow">
+		    	<button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+		    	<button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+			<img class= "mySlides" src="images/1.jpg" alt="snares" width="100%">
+			<img class= "mySlides" src="images/2.jpg" alt="2018" width=100%>
+			<img class= "mySlides" src="images/3.jpg" alt="2017" width=100%>
+			<img class= "mySlides" src="images/4.jpg" alt="2017" width=100%>
+			<img class= "mySlides" src="images/5.jpg" alt="2017" width="100%">
+		</div>
+
+		<!--<div class="slidershow middle">
+	       <div class="slides">
+	         <input type="radio" name="r" id="r1" checked>
+	         <input type="radio" name="r" id="r2">
+	         <input type="radio" name="r" id="r3">
+	         <input type="radio" name="r" id="r4">
+	         <input type="radio" name="r" id="r5">
+	         <div class="slide s1">
+	           <img src="images/2018_1.jpg" alt="">
+	         </div>
+	         <div class="slide">
+	           <img src="images/2017_1.jpg" alt="">
+	         </div>
+	         <div class="slide">
+	           <img src="images/2017_2.jpg" alt="">
+	         </div>
+	         <div class="slide">
+	           <img src="images/snares.jpg" alt="">
+	         </div>
+	         <div class="slide">
+	           <img src="images/ECB_1.jpg" alt="">
+	         </div>
+	       </div>
+
+	       <div class="navigation">
+	         <label for="r1" class="bar"></label>
+	         <label for="r2" class="bar"></label>
+	         <label for="r3" class="bar"></label>
+	         <label for="r4" class="bar"></label>
+	         <label for="r5" class="bar"></label>
+	    		</div>
+	     </div>-->
+    </section>
+    <script>
+	    /* FOR VERSION I*/
+	    var slideIndex = 1;
+	    showDivs(slideIndex);
+	    function plusDivs(n) {
+	      	showDivs(slideIndex += n);
+	    }
+	    function showDivs(n) {
+		      var i;
+		      var x = document.getElementsByClassName("mySlides");
+		      if (n > x.length) {slideIndex = 1}
+		      if (n < 1) {slideIndex = x.length}
+		      for (i = 0; i < x.length; i++) {
+	        		x[i].style.display = "none";
+	      }
+	      x[slideIndex-1].style.display = "block";
+	 }
+ 	</script>
+</body>
+</html>
